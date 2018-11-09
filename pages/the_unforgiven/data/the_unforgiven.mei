@@ -3,11 +3,51 @@
 <?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
     <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>The Unforgiven</title>
+        <fileDesc xml:id="file-info">
+            <titleStmt xml:id="title-info">
+                <title xml:id="title">The Unforgiven</title>
+                <author xml:id="author">Metallica</author>
+                <respStmt xml:id="encoded">
+                  <resp xml:id="encoded-by">Encoded by:</resp>
+                  <persName role="encoder" xml:id="encoder-name">William Bird</persName>
+                </respStmt>
             </titleStmt>
-            <pubStmt></pubStmt>
+            <editionStmt xml:id="edition">
+              <title xml:id="edition-title">The Unforgiven</title>
+              <author xml:id="edition-author">Metallica</author>
+              <date xml:id="edition-date">1991</date>
+              <respStmt>
+                <resp>Encoded by:</resp>
+                <name>Wiliam Bird</name>
+              </respStmt>
+            </editionStmt>
+            <extent xml:id="size" unit="megabytes">347 Megabytes</extent>
+            <pubStmt>
+              <address xml:id="pub-location">
+                <addrLine>
+                  <geogName xml:id="city">Glasgow</geogName>
+                </addrLine>
+                <addrLine>
+                  <geogName xml:id="country">United Kingdom</geogName>
+                </addrLine>
+              </address>
+            </pubStmt>
+            <seriesStmt xml:id="series-data">
+              <title xml:id="series-title">Music Curation and Analytics Project</title>
+              <editor xml:id="series-editor">William Bird</editor>
+              <identifier xml:id="series-iden">MCA-2018</identifier>
+            </seriesStmt>
+            <notesStmt xml:id="note-info">
+              <annot xml:id="project-notes">Music by Metallica annotated by William Bird for a project at the University of Glasgow</annot>
+            </notesStmt>
+            <sourceDesc xml:id="sourceDesc">
+              <source xml:id="source">
+                <titleStmt>
+                  <title xml:id="source-title">The Unforgiven</title>
+                  <author xml:id="source-author">Metallica</author>
+                </titleStmt>
+              </source>
+            </sourceDesc>
         </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000000686351095">
             <appInfo xml:id="appinfo-0000001124247210">

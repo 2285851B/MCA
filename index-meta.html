@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <title>My Music Encoding Project</title>
     <meta charset="utf-8">
@@ -10,14 +9,12 @@
     <script src="js/verovio-toolkit.js"></script>
     <script src="js/utils.js"></script>
   </head>
-
   <body>
     <div id="content">
       <!-- ADD YOUR HTML CONTENT HERE! -->
       <h1>My project</h1>
       <h2>Metadata</h2>
       <p id="meta"></p>
-
     </div>
 
     <!-- **** DO NO EDIT BELOW THIS LINE **** -->
@@ -29,7 +26,7 @@
    <script src="js/index.js"></script>
     <script>
       var xhr = new XMLHttpRequest()
-      xhr.open('GET','data/the_unforgiven.mei') // <!-- change this to the right file -->
+      xhr.open('GET','pages/the_unforgiven/data/the_unforgiven.mei') // <!-- change this to the right file -->
       xhr.send(null)
 
       /* Deal with the response */
@@ -46,10 +43,10 @@
            /* If your element does not have an authURI attribute, copy the following line, being sure to replace the "MY-XML-ID" with your element's actual xml:id.
             document.querySelector("#meta").innerHTML += "<p>" + meiDoc.querySelector("[*|id='m-8']").textContent + "</p>"
             */
+			document.querySelector("#meta").innerHTML += "<p>" + meiDoc.querySelector("[*|id='title']").textContent + "</p>"
           }
         }
       }
     </script>
   </body>
-
 </html>

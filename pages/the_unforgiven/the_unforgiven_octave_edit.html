@@ -10,9 +10,11 @@
 		<script src="../../js/utils.js"></script>
 	</head>
 	<body>
-		<div id='content'>
+		<div class='content'>
 			<h1>My Project - William Bird</h1>
-			<h2 class='scoretitle'>The Unforgiven - Octave Shifted</h2>
+			<h2 id="title"></h2>
+			<h3 id="artist"></h3>
+			<p id="encoded"></p>
 			<a href='../../index.html'><h3 align='left'>Back</h3></a>
 		</div>
 		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
@@ -21,8 +23,43 @@
 			<button id="prev"> &lt; </button>
 			<button id="next"> &gt; </button>
 		</div>
+		<div class='fileinfo'>
+			<p id="size"></p>
+		</div>
+	    <script style="content-fit:contain">
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET','data/the_unforgiven_octave_edit.mei') // <!-- change this to the right file -->
+      xhr.send(null)
+
+      /* Deal with the response */
+      xhr.onreadystatechange = function () {
+        var DONE = 4
+        var OK = 200
+        if (xhr.readyState === DONE) {
+          if (xhr.status === OK) {
+            var parser = new DOMParser()
+            var meiDoc = parser.parseFromString(xhr.responseText,"text/xml")
+            /* If your element has an authURI attribute, copy the folloiwng line, being sure to replace the "MY-XML-ID" with your element's actual xml:id.
+            document.querySelector("#meta").innerHTML += "<a href=\"" + meiDoc.querySelector("[*|id='MY-XML-ID']").getAttribute('authURI') +"\"><p>" + meiDoc.querySelector("[*|id='MY-XML-ID']").textContent + "</p></a>"
+           */
+           /* If your element does not have an authURI attribute, copy the following line, being sure to replace the "MY-XML-ID" with your element's actual xml:id.
+            document.querySelector("#meta").innerHTML += "<p>" + meiDoc.querySelector("[*|id='m-8']").textContent + "</p>"
+            */
+			document.querySelector("#title").innerHTML += "<p>" + meiDoc.querySelector("[*|id='title']").textContent + "</p>" ;
+			document.querySelector("#artist").innerHTML += "<p>" + meiDoc.querySelector("[*|id='author']").textContent + "</p>" ;
+			document.querySelector("#encoded").innerHTML += "<p>" + meiDoc.querySelector("[*|id='encoded']").textContent + "</p>" ;
+			document.querySelector("#size").innerHTML += "<p>" + meiDoc.querySelector("[*|id='size']").textContent + "</p>" ;
+			document.querySelector("#info").innerHTML += "<p>" + meiDoc.querySelector("[*|id='series-data']").textContent + meiDoc.querySelector("[*|id='pub-location']").textContent + "</p>" ;
+          }
+        }
+      }
+		</script>
 		<div id="score">
 			<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
+		</div>
+		<div class='footer'>
+			<p id="edition"></p>
+			<p id="info"></p>
 		</div>
 		<!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
 		<script src="../../js/index/the_unforgiven_octave_edit.js"></script>
