@@ -19,14 +19,10 @@
 		</div>
 		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
 		<!-- * **** **** **** **** **** **** **** -->
-		<div id="controls">
-			<button id="prev"> &lt; </button>
-			<button id="next"> &gt; </button>
-		</div>
 		<div class='fileinfo'>
 			<p id="size"></p>
 		</div>
-	    <script style="content-fit:contain">
+	    <script>
       var xhr = new XMLHttpRequest()
       xhr.open('GET','data/the_unforgiven.mei') // <!-- change this to the right file -->
       xhr.send(null)
@@ -54,6 +50,10 @@
         }
       }
 		</script>
+		<div id="controls">
+			<button id="prev"> &lt; </button>
+			<button id="next"> &gt; </button>
+		</div>
 		<div id="score">
 			<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
 		</div>
