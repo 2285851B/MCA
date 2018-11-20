@@ -5,24 +5,36 @@
 		<meta charset="utf-8">
 		<meta name="description" content="My project">
 		<meta name="author" content="Me">
-		<link rel="stylesheet" href="css/style.css" media="all" />
+		<link rel="stylesheet" href="../style.css" media="all" />
 		<script src="../../js/verovio-toolkit.js"></script>
 		<script src="../../js/utils.js"></script>
 	</head>
 	<body>
-		<div class='content'>
-			<h1>My Project - William Bird</h1>
-			<h2 id="title"></h2>
-			<h3 id="artist"></h3>
-			<p id="encoded"></p>
-			<a href='../../index.html'><h3 align='left'>Back</h3></a>
+		<div id="top">
+			<h1>William Bird Music Analytics Project</h1>
 		</div>
+		<div id="left">
+			<table class="head">
+				<tr class="head2">
+					<td class="head2"><a href='../../index.html'>Home</a></td>
+				</tr>
+				<tr class="head2">
+					<td class="head2"><a href='../about.html'>About</a></td>
+				</tr>
+			</table>
+		</div>
+		<div id='content'>
+			<div>
+				<h2 id="title"></h2>
+				<h3 id="artist"></h3>
+				<p id="encoded"></p>
+			</div>
 		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
 		<!-- * **** **** **** **** **** **** **** -->
-		<div class='fileinfo'>
-			<p id="size"></p>
-		</div>
-	    <script>
+			<div class='fileinfo'>
+				<p id="size"></p>
+			</div>
+			<script>
       var xhr = new XMLHttpRequest()
       xhr.open('GET','data/the_unforgiven.mei') // <!-- change this to the right file -->
       xhr.send(null)
@@ -49,17 +61,18 @@
           }
         }
       }
-		</script>
-		<div id="controls">
-			<button id="prev"> &lt; </button>
-			<button id="next"> &gt; </button>
-		</div>
-		<div id="score">
-			<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
-		</div>
-		<div class='footer'>
-			<p id="edition"></p>
-			<p id="info"></p>
+			</script>
+			<div id="controls">
+				<button id="prev"> &lt; </button>
+				<button id="next"> &gt; </button>
+			</div>
+			<div id="score">
+				<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
+			</div>
+			<div class='footer'>
+				<p id="edition"></p>
+				<p id="info"></p>
+			</div>
 		</div>
 		<!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
 		<script src="../../js/index/the_unforgiven.js"></script>
