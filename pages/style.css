@@ -92,26 +92,32 @@ ul {
 }
 
 #top {
-    position: absolute;
-    height: 4.5vw;
-    left: 13vw;
+	float: top;
     width: 85vw;
-    padding-left: 2vw;
     padding-top: 2vw;
     background-color: transparent;
 }
 
 #left {
-    position: absolute;
-    width: 13vw;
+	float: left;
+    width: 10vw;
 	top: 0px;
 	bottom: 0px;
     background-color: transparent;
+	padding-left:3vw;
+}
+
+#contenthome {
+    position: absolute;
+    top: 3vw;
+    padding-top: 4.75vw;
+    left: 13vw;
+    padding-left: 2vw;
+    padding-right: 10vw;
 }
 
 #content {
-    position: absolute;
-    top: 3vw;
+	position: absolute;
     padding-top: 4.75vw;
     left: 13vw;
     padding-left: 2vw;
