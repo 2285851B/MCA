@@ -3,13 +3,13 @@
 	margin-bottom: 0;
     border: 0;
     outline: 0;
-    background: transparent;
 }
 
 html, body {
     padding-right: 2vw;
     padding-left: 2vw;
 	padding-top: 1vw;
+	padding-bottom: 1vw;
 }
 
 h1 {
@@ -31,7 +31,7 @@ h3 {
     font-size: 20px;
 }
 
-h4, .listhead {
+h4 {
 	font-size: 17px;
 	font-weight: bold;
 }

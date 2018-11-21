@@ -5,20 +5,28 @@
 		<meta charset="utf-8">
 		<meta name="description" content="My project">
 		<meta name="author" content="Me">
-		<link rel="stylesheet" href="css/style.css" media="all" />
+		<link rel="stylesheet" href="../style.css" media="all"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="initial-scale=1">
 		<script src="../../js/verovio-toolkit.js"></script>
 		<script src="../../js/utils.js"></script>
 	</head>
 	<body>
-		<div class='content'>
-			<h1>My Project - William Bird</h1>
-			<h2 id="title"></h2>
-			<h3 id="artist"></h3>
-			<p id="encoded"></p>
-			<a href='../../index.html'><h3 align='left'>Back</h3></a>
-		</div>
+		<h1>William Bird Music Analytics Project</h1>
+		<table class="menu" align="center">
+			<tr class="menu">
+				<th class="menu">Home</th>
+				<th class="menu">About</th>
+			</tr>
+		</table>
+		<h2 id="title"></h2>
+		<h3 id="artist"></h3>
+		<p id="encoded"></p>
 		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
 		<!-- * **** **** **** **** **** **** **** -->
+		<div class='fileinfo'>
+			<p id="size"></p>
+		</div>
 		<div id="controls">
 			<button id="prev"> &lt; </button>
 			<button id="next"> &gt; </button>
@@ -26,7 +34,7 @@
 		<div class='fileinfo'>
 			<p id="size"></p>
 		</div>
-	    <script style="content-fit:contain">
+	    <script>
       var xhr = new XMLHttpRequest()
       xhr.open('GET','data/the_unforgiven_octave_edit.mei') // <!-- change this to the right file -->
       xhr.send(null)

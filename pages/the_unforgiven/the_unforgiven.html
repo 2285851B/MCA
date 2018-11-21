@@ -12,10 +12,12 @@
 		<script src="../../js/utils.js"></script>
 	</head>
 	<body>
-		<table>
-			<th></th>
-			<th></th>
-			<th></th>
+		<h1>William Bird Music Analytics Project</h1>
+		<table class="menu" align="center">
+			<tr class="menu">
+				<th class="menu">Home</th>
+				<th class="menu">About</th>
+			</tr>
 		</table>
 		<h2 id="title"></h2>
 		<h3 id="artist"></h3>
@@ -29,9 +31,12 @@
 			<button id="prev"> &lt; </button>
 			<button id="next"> &gt; </button>
 		</div>
-		<script>
+		<div class='fileinfo'>
+			<p id="size"></p>
+		</div>
+	    <script>
       var xhr = new XMLHttpRequest()
-      xhr.open('GET','data/the_unforgiven.mei') // <!-- change this to the right file -->
+      xhr.open('GET','data/the_unforgiven_octave_edit.mei') // <!-- change this to the right file -->
       xhr.send(null)
 
       /* Deal with the response */
