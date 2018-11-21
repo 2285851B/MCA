@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature_vector_file [
+   <!ELEMENT feature_vector_file (comments, data_set+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT data_set (data_set_id, section*, feature*)>
+   <!ELEMENT data_set_id (#PCDATA)>
+   <!ELEMENT section (feature+)>
+   <!ATTLIST section start CDATA ""
+                     stop CDATA "">
+   <!ELEMENT feature (name, v+)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT v (#PCDATA)>
+]>
+
+<feature_vector_file>
+
+   <comments></comments>
+
+	<data_set>
+		<data_set_id>D:\Users\NewUsername\Documents\Uni\Year 3\DMIS Year 3\Music Curation and Analytics\The_Unforgiven.mid</data_set_id>
+		<feature>
+			<name>Number of Pitches</name>
+			<v>3.5E1</v>
+		</feature>
+		<feature>
+			<name>Number of Pitch Classes</name>
+			<v>9E0</v>
+		</feature>
+		<feature>
+			<name>Range</name>
+			<v>5.3E1</v>
+		</feature>
+		<feature>
+			<name>Strong Tonal Centres</name>
+			<v>2E0</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch</name>
+			<v>5.9E1</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch Class</name>
+			<v>6.215E0</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch</name>
+			<v>5.2E1</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch Class</name>
+			<v>9E0</v>
+		</feature>
+		<feature>
+			<name>Major or Minor</name>
+			<v>0E0</v>
+		</feature>
+	</data_set>
+
+</feature_vector_file>feature>
+
+   <feature>
+      <name>Strong Tonal Centres</name>
+      <description>Number of isolated peaks in the fifths pitch histogram that each individually account for at least 9% of all notes in the piece.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Mean Pitch</name>
+      <description>Mean MIDI pitch value, averaged across all pitched notes in the piece. Set to 0 if there are no pitched notes.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Mean Pitch Class</name>
+      <description>Mean pitch class value, averaged across all pitched notes in the piece. A value of 0 corresponds to a mean pitch class of C, and pitches increase chromatically by semitone in integer units from there (e.g. a value of 2 would mean that D is the mean pitch class). Enharmonic equivalents are treated as a single pitch class.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Most Common Pitch</name>
+      <description>MIDI pitch value of the most frequently occuring pitch.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Most Common Pitch Class</name>
+      <description>The pitch class that occurs most frequently compared to other pitch classes. A value of 0 corresponds to C, and pitches increase chromatically by semitone in integer untis (e.g. a value of 2 would mean that D is the most common pitch class). Enharmonic equivalents are treated as a single pitch class.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Major or Minor</name>
+      <description>Whether the piece is major or minor, as indicated by the first encountered major/minor metadata tag in the piece. Set to 0 if the metadata indicates that the piece is major, or set to 1 if the metadata indicates that it is minor. Defaults to 0 if the key signature is unknown.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+</feature_key_file>
