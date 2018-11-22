@@ -19,7 +19,7 @@ h1 {
 	text-align: center;
 }
 
-h2, h3, h4, p, a, th {
+h2, h3, h4, p, a, th, td {
 	font-family: Lato;
 }
 
@@ -39,8 +39,25 @@ h4 {
 	font-weight: bold;
 }
  
-p {
+p, td {
     font-size: 16px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th, tr {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 
 button {
