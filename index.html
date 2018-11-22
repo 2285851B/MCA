@@ -4,19 +4,17 @@
 		<title>My Music Encoding Project</title>
 		<meta charset="utf-8">
 		<meta name="description" content="My project">
-		<meta name="author" content="Me">
+		<meta name="author" content="William Bird">
 		<link rel="stylesheet" type="text/css" href="pages/style.css" media="all"/>
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="initial-scale=1">
-		<script src="js/verovio-toolkit.js"></script>
-		<script src="js/utils.js"></script>
 	</head>
 	<body>
 		<h1>William Bird Music Analytics Project</h1>
 		<table class="menu" align="center">
 			<tr class="menu">
-				<td class="menu"><p><b>Home</b></p></th>
-				<td class="menu"><a href="pages/about.html"><p>About</p></a></th>
+				<td class="menu"><p><b>Home</b></p></td>
+				<td class="menu"><a href="pages/about.html"><p>About</p></a></td>
 			</tr>
 		</table>
 		<h2>Notating Musical Scores</h2>
@@ -44,17 +42,33 @@
 			</ul>
 		</ul>
 		<br>
-		<h2>jSymbolic Music Analysis</h2>
-		<p>Next, I used the program jSymbolic to create analysis files of 'The Unforgiven'.</p>
-		<a href="pages/jSymbolic/jsymbolic.html"><h3>jSymbolic</h3></a>
+		<h2>Basic Analytics</h2>
+		<p>Next, I used the program jSymbolic to create analysis files of 'The Unforgiven'. I also used music21 in python to generate a piano roll 
+			and a pitch histogram of 'The Unforgiven'.</p>
+		<a href="pages/basic_analytics/jsymbolic/jsymbolic.html"><h3>jSymbolic</h3></a>
+		<a href="pages/basic_analytics/music21/music21.html"><h3>music21</h3></a>
 		<br>
-		<h2>Python and music21</h2>
-		<p>I also used music21 in python to generate a piano roll and a pitch histogram of 
-		'The Unforgiven'.</p>
-		<a href="pages/music21/music21.html"><h3>music21</h3></a>
+		<h2>Music as Sound</h2>
+		<p>For this task I downloaded 3 copyright free songs of different genres, 
+			I then identified and listed the most important metadata. Next I created
+			a spectogram for each of these songs using  SonicVisualizer.
+		</p>
+		<a href="pages/music_as_sound/Good God/good_god.html"><h3>Good God</h3></a>
+		<a href="pages/music_as_sound/Moth Man/moth_man.html"><h3>Moth Man</h3></a>
+		<a href="pages/music_as_sound/Searching for Zelda/searching_for_zelda.html"><h3>Searching for Zelda</h3></a>
 		<br>
-		<h2>Time Frequnecy Analysis</h2>
+		<h4>Advantage of time-frequency analysis over waveform analysis</h4>
+		<p>
+			One of the advantages of time-frequency analysis over waveform-based analysis is that it 
+			is possible for humans to see which notes are being played at which times. 
+			In waveform-based analysis it is impossible for the human eye to view the wave, and to 
+			know what note is being played at any given time. However, in a time-frequency analysis 
+			it is possible to see which notes are present. An example of this is with the song 
+			‘Good God’ which I created a spectrogram for, in the spectrogram there are a variety of 
+			notes at different Hz visible, and we can even see at what times the song includes vocals.
+		</p>
 		<br>
-		
+		<h2>Extracting Meaning from Audio</h2>
+		<p></p>
 	</body>
 </html>
