@@ -25,7 +25,7 @@
             <pubStmt>
               <address xml:id="pub-location">
                 <addrLine>
-                  <geogName xml:id="city">Glasgow</geogName>
+                  <geogName xml:id="city">Glasgow </geogName>
                 </addrLine>
                 <addrLine>
                   <geogName xml:id="country">United Kingdom</geogName>

@@ -19,7 +19,8 @@
 				<td class="menu"><a href="pages/about.html"><p>About</p></a></th>
 			</tr>
 		</table>
-		<h2 id="title"></h2>
+		<h2>Standard</h2>
+		<h3 id="title"></h3>
 		<h3 id="artist"></h3>
 		<p id="encoded"></p>
 		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
@@ -27,6 +28,7 @@
 		<div class='fileinfo'>
 			<p id="size"></p>
 		</div>
+		<br>
 		<div id="controls">
 			<button id="prev"> &lt; </button>
 			<button id="next"> &gt; </button>
@@ -36,7 +38,7 @@
 		</div>
 	    <script>
       var xhr = new XMLHttpRequest()
-      xhr.open('GET','data/the_unforgiven_octave_edit.mei') // <!-- change this to the right file -->
+      xhr.open('GET','data/the_unforgiven.mei') // <!-- change this to the right file -->
       xhr.send(null)
 
       /* Deal with the response */
@@ -58,6 +60,9 @@
 			document.querySelector("#encoded").innerHTML += "<p>" + meiDoc.querySelector("[*|id='encoded']").textContent + "</p>" ;
 			document.querySelector("#size").innerHTML += "<p>" + meiDoc.querySelector("[*|id='size']").textContent + "</p>" ;
 			document.querySelector("#info").innerHTML += "<p>" + meiDoc.querySelector("[*|id='series-data']").textContent + meiDoc.querySelector("[*|id='pub-location']").textContent + "</p>" ;
+			document.querySelector("#edition").innerHTML += "<p>" + meiDoc.querySelector("[*|id='edition']").textContent + "</p>" ;
+			document.querySelector("#notes").innerHTML += "<p>" + meiDoc.querySelector("[*|id='project-notes']").textContent + "</p>" ;
+			document.querySelector("#location").innerHTML += "<p>" + meiDoc.querySelector("[*|id='city']").textContent + meiDoc.querySelector("[*|id='country']").textContent + "</p>" ;
           }
         }
       }
@@ -66,8 +71,11 @@
 			<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
 		</div>
 		<div class='footer'>
+			<h5>Metadata:</h5>
 			<p id="edition"></p>
 			<p id="info"></p>
+			<p id="notes"></p>
+			<p id="location"></p>
 		</div>
 		<!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
 		<script src="../../js/index/the_unforgiven.js"></script>

@@ -21,11 +21,11 @@
             </respStmt>
           </edition>
         </editionStmt>
-        <extent xml:id="size" unit="megabytes">343 Megabytes</extent>
+        <extent xml:id="size" unit="megabytes">347 Megabytes</extent>
         <pubStmt>
           <address xml:id="pub-location">
             <addrLine>
-              <geogName xml:id="city">Glasgow</geogName>
+              <geogName xml:id="city">Glasgow </geogName>
             </addrLine>
             <addrLine>
               <geogName xml:id="country">United Kingdom</geogName>
@@ -38,7 +38,7 @@
           <identifier xml:id="series-iden">MCA-2018</identifier>
         </seriesStmt>
         <notesStmt xml:id="note-info">
-          <annot xml:id="project-notes">Music by Metallica annotated by William Bird for a project at the University of Glasgow</annot>
+          <resp xml:id="project-notes">Music by Metallica annotated by William Bird for a project at the University of Glasgow</resp>
         </notesStmt>
         <sourceDesc xml:id="sourceDesc">
           <source xml:id="source">
