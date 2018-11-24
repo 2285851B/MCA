@@ -15,6 +15,7 @@
 			<tr class="menu">
 				<td class="menu"><p><b>Home</b></p></td>
 				<td class="menu"><a href="pages/about.html"><p>About</p></a></td>
+				<td class="menu"><a href="pages/content.html"><p>Table of Contents</p></a></td>
 			</tr>
 		</table>
 		<h2>Notating Musical Scores</h2>
@@ -91,16 +92,53 @@
 		</p>
 		<ul>
 			<li>
-				<a href="" class="tracks"></a>
+				<a href="pages/meaning_from_audio/Anata kara toku e (far away from you)/anata_kara.html" class="tracks">Anata kara toku e (Far Away From You)</a>
 			</li>
 			<li>
-				<a href="" class="tracks"></a>
+				<a href="pages/meaning_from_audio/Eternity/eternity.html" class="tracks">Eternity</a>
 			</li>
 			<li>	
-				<a href="" class="tracks">Searching for Zelda</a>
+				<a href="pages/meaning_from_audio/Funk the floor/funk_the_floor.html" class="tracks">Funk the Floor</a>
 			</li>
 		</ul>
-		<h4>Histogram Discussion</h4>
-		<p></p>
+		<h4>Chromagram based Histogram Discussion</h4>
+		<p>Looking at the histograms created from the Chromagram .csv files,
+		the 3 tracks all seem similar, and they all follow a similar guide of
+		where the histograms peak. However, there are differences in the height
+		of these peaks. This is most noticeable when comparing the histograms
+		generated from Anata kara toku e and for Funk the Floor. When comparing
+		these it is not common to see any of the histograms peaking at around
+		the same height. However, it is very common to see that a certain
+		histogram for one song has a very tall peak, it is likely the same
+		histogram for the other song has a very short peak. This comes at
+		not surprise as after listening to the music, the songs are completely
+		different genres and composted in completely different styles.
+		Anata kara toku e being an acoustic guitar with soft vocals and Funk
+		the Floor being a bazar mixture of fusion or experimental jazz with
+		intermediate distorted vocals. The histograms also show the song Eternity
+		often having peaks which are very narrow compared to the other tracks.</p>
+		<br>
+		<p>When considering the huge variance in genres in these songs,
+		it does not come as a surprise that the histograms created show
+		differences in the peak heights. However, what is surprising is
+		that the peaks are all in roughly the same area of the histogram.</p>
+		<br>
+		<h2>Similarity and Transcription</h2>
+		<p>I first downloaded 3 Blues songs and created similarity graphs comparing 
+		the notes used in these songs to Classical and Rock songs based off the notes 
+		used. These graphs were created from .csv files derived from Chromagrams 
+		of the songs.</p>
+		<a href="pages/similarity_transcription/similarity/similarity.html"><h3>Similarity</h3></a>
+		<br>
+		<p>Next I chose 2 songs to open in MuseScore one of these being the track I used throughout this 
+		project 'The Unforgiven' and the other track was a new track I found online, which 
+		was the Pokémon Black and White League soundtrack.</p>
+		<br>
+		<p>For each of these tracks I downloaded the origional MuseScore file, which I then exported 
+		as a .wav file. From this .wav file I created a MIDI file which could be loaded back into 
+		MuseScore. Click the links below to see the differences in the original files, and those 
+		created from a MIDI version of that file (based on its .wav file)</p>
+		<a href="pages/similarity_transcription/the_unforgiven/the_unforgiven_transcription.html"><h3>The Unforgiven</h3></a>
+		<a href="pages/similarity_transcription/pokemon/pokemon.html"><h3>Pokémon Black and White League Soundtrack</h3></a>
 	</body>
 </html>

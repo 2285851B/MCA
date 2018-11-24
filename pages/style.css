@@ -19,7 +19,7 @@ h1 {
 	text-align: center;
 }
 
-h2, h3, h4, h5, p, a, th, td {
+h2, h3, h4, h5, p, a, th, td, li, ul, ol {
 	font-family: Lato;
 }
 
@@ -44,7 +44,7 @@ h5 {
 	text-decoration: underline
 }
  
-p, td {
+p, td, ol, ul, li {
     font-size: 16px;
 }
 
